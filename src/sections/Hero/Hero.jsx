@@ -21,6 +21,7 @@ function Hero() {
         <img 
           className={styles.hero}
           src={heroImg} 
+          style={{ width: '375px', height: 'auto' }}
           alt="Profile picture of Nicholas Wong" 
         />
         <img 

@@ -5,5 +5,16 @@
     gap: 20 px;
     text-align: center; 
     height: 100dvh;
+    min-height: 500px;
+
+    .hero {
+        max-width: 200px;
+    }
+
+    span {
+        display: flex;
+        gap: 25px;
+
+    }
 
 }

@@ -33,7 +33,7 @@ function Hero() {
     </div>
     <div className={styles.info}>
         <h1>
-          Nicholas 
+          Nicholas
           <br /> 
           Wong
         </h1>

@@ -3,6 +3,7 @@ import wordle from '../../assets/wordle.png'
 import ProjectCard from '../../common/ProjectCard';
 import klondike from '../../assets/klondike.png'
 import video from '../../assets/video.png'
+import website from '../../assets/website.png';
 
 function Projects() {
   return (
@@ -11,10 +12,10 @@ function Projects() {
       <div className={styles.projectsContainer}>
         <ProjectCard
           src={video}
-          link="https://github.com/nickw0ng/Wordle"
+          link="https://github.com/nickw0ng/REST-API"
 
           h3="Video Manager"
-          p="RESTful API using Flask"
+          p="RESTful API"
         />
 
         <ProjectCard
@@ -26,10 +27,18 @@ function Projects() {
         />
 
         <ProjectCard
+          src={website}
+          link="https://github.com/nickw0ng/REST-API"
+
+          h3="Personal Website"
+          p="Individual Portfolio"
+        />
+
+        <ProjectCard
           src={klondike}
           link="https://github.com/nickw0ng/Klondike"
 
-          h3="Klondike (Solitaire)"
+          h3="Klondike(Solitaire)"
           p="Card Game"
         />
       </div>

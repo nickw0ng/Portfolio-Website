@@ -28,7 +28,7 @@ function Projects() {
 
         <ProjectCard
           src={website}
-          link="https://github.com/nickw0ng/REST-API"
+          link="https://github.com/nickw0ng/nicholas-wong-portfolio"
 
           h3="Personal Website"
           p="Individual Portfolio"

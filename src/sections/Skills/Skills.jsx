@@ -26,14 +26,13 @@ function Skills() {
       </div>
       <hr />
       <div className={styles.skillList}>
-        <SkillList src={checkMarkIcon} skill="Redux" />
-        <SkillList src={checkMarkIcon} skill="Webpack" />
         <SkillList src={checkMarkIcon} skill="Git" />
-        <SkillList src={checkMarkIcon} skill="Jest" />
-        <SkillList src={checkMarkIcon} skill="Bootstrap" />
+        <SkillList src={checkMarkIcon} skill="Pygame" />
+        <SkillList src={checkMarkIcon} skill="Numpy" />
+        <SkillList src={checkMarkIcon} skill="Pandas" />
       </div>
     </section>
   );
-}
+} 
 
 export default Skills;

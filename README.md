@@ -76,9 +76,9 @@ This project is licensed under the MIT License.
 
 ## Contact
 
-- **Name**: Nick Wong
-- **Email**: [your-email@example.com]
-- **LinkedIn**: [your-linkedin-profile]
+- **Name**: Nicholas
+- **Email**: [wong.nicho@northeastern.edu]
+- **LinkedIn**: [www.linkedin.com/in/nicholas-wong18]
 - **GitHub**: [https://github.com/nickw0ng](https://github.com/nickw0ng)
 ```
 

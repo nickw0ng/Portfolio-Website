@@ -1,3 +1,4 @@
+import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import styles from './HeroStyles.module.css';
 import heroImg from '../../assets/hero-img.png';
 import sun from '../../assets/sun.svg';
@@ -15,6 +16,13 @@ function Hero() {
   const themeIcon = theme === 'light' ? sun : moon;
   const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
   const githubIcon = theme === 'light' ? githubLight : githubDark;
+
+  const [typeEffect] = useTypewriter({
+    words: ['Software Engineer', 'Student', 'Web Developer']
+    ,loop: true,
+    typeSpeed: 100,
+    deleteSpeed: 50
+  })
 
 
   return <section if="hero" className={styles.container}>
@@ -38,7 +46,12 @@ function Hero() {
           <br /> 
           Wong
         </h1>
-        <h2>Software Engineer</h2>
+        <div className="App">
+        <h2>
+          I'm a 
+          <span>{typeEffect}</span>
+        </h2>
+        </div>
         <span>
             <a href='https://www.linkedin.com/in/nicholas-wong18/' target="_blank">
                 <img src={linkedinIcon} alt="Linkedin icon" />

@@ -1,6 +1,4 @@
-Here is the README in markdown format:
 
-```markdown
 # Portfolio Website
 
 This is a personal portfolio website built using React and Vite. It showcases my projects, skills, and contact information.

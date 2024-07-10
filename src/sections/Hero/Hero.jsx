@@ -16,7 +16,7 @@ function Hero() {
   const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
   const githubIcon = theme === 'light' ? githubLight : githubDark;
 
-  // eslint-disable-next-line react/no-unknown-property
+
   return <section if="hero" className={styles.container}>
     <div className={styles.colorModeContainer}>
         <img 

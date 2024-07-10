@@ -47,9 +47,8 @@ function Hero() {
           Wong
         </h1>
         <div className="App">
-        <h2>
-          I'm a 
-          <span>{typeEffect}</span>
+        <h2> 
+          <span> {typeEffect}</span>
         </h2>
         </div>
         <span>

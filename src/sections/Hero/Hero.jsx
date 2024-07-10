@@ -43,7 +43,7 @@ function Hero() {
     <div className={styles.info}>
         <h1>
           Nicholas
-          <br /> 
+          <br />  
           Wong
         </h1>
         <div className="App">

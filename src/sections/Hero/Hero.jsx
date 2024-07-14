@@ -21,7 +21,7 @@ function Hero() {
     words: ['Software Engineer', 'Student', 'Web Developer']
     ,loop: true,
     typeSpeed: 100,
-    deleteSpeed: 50
+    deleteSpeed: 49
   })
 
 

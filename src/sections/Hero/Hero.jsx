@@ -35,7 +35,7 @@ function Hero() {
         />
         <img 
           className={styles.colorMode}
-          src={themeIcon}
+          src={themeIcon} 
           alt="Color mode icon"
           onClick={toggleTheme}
         />

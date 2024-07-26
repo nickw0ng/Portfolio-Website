@@ -63,7 +63,7 @@ function Hero() {
           With a passion for Software Development and creating modern React apps.</p>
         <a href={CV} download>
           <button className="hover">
-            Resume
+             Resume 
           </button>
         </a>
     </div>

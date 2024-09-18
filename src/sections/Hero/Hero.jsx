@@ -60,7 +60,7 @@ function Hero() {
             </a>
         </span>
         <p className={styles.description}>
-          With a passion for Software Development and creating modern React apps.</p>
+          With a passion for Software Development and creating modern React applications.</p>
         <a href={CV} download>
           <button className="hover">
              Resume 

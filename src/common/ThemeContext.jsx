@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
-
+/* abstract for the theme changes between dark and light */
 const ThemeContext = createContext();
 
 export const useTheme = () => useContext(ThemeContext);

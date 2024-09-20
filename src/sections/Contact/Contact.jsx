@@ -1,5 +1,5 @@
 import styles from './ContactStyles.module.css';
-
+/* Doesnt work yet */
 function Contact() {
   return (
     <section id="contact" className={styles.container}>

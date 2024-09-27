@@ -17,6 +17,9 @@ function Hero() {
   const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
   const githubIcon = theme === 'light' ? githubLight : githubDark;
 
+  /* Typewriting effects showing the role that I have.
+      Need to find a way to not shift the page when the Typewriting effect is empty
+  */
   const [typeEffect] = useTypewriter({
     words: ['Software Engineer', 'Student', 'Web Developer']
     ,loop: true,

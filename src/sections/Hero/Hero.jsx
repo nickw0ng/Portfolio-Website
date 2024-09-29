@@ -10,6 +10,7 @@ import githubDark from '../../assets/github-dark.svg';
 import CV from '../../assets/cv.pdf';
 import { useTheme } from '../../common/ThemeContext'
 
+
 function Hero() {
   const { theme, toggleTheme } = useTheme()
 
@@ -69,7 +70,7 @@ function Hero() {
              Resume 
           </button>
         </a>
-    </div>
+        </div>
   </section>
   
 }

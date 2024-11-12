@@ -35,7 +35,7 @@ function Hero() {
           className={styles.hero}
           src={heroImg} 
           style={{ width: '373px', height: 'auto' }}
-          alt="Profile picture of Nicholas Wong"  /*Description of profile picture  */
+          alt="Profile picture of Nicholas Wong"  /*Description o f profile picture  */
         />
         <img 
           className={styles.colorMode}

@@ -26,13 +26,6 @@ function Projects() {
           p="Puzzle Game"
         />
 
-        <ProjectCard
-          src={wordle}
-          link="https://github.com/nickw0ng/Wordle"
-
-          h3="Battleship"
-          p="Puzzle Game"
-        />
 
         <ProjectCard
           src={website}

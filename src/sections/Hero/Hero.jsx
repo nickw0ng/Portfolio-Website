@@ -35,14 +35,18 @@ function Hero() {
           className={styles.hero}
           src={heroImg} 
           style={{ width: '373px', height: 'auto' }}
-          alt="Profile picture of Nicholas Wong"  /*Description of  profile picture  */
+          alt="Profile picture of Nicholas Wong"  
         />
         <img 
           className={styles.colorMode}
           src={themeIcon} 
-          alt="Color mode icon"
+          alt="Color mode icon" 
           onClick={toggleTheme}
         />
+        <div className={styles.arrowContainer}>
+          <div className={styles.arrow}></div> 
+          <span className={styles.pressMeText}>Press me</span> 
+      </div>
     </div>
     <div className={styles.info}>
         <h1>
@@ -64,7 +68,7 @@ function Hero() {
             </a>
         </span>
         <p className={styles.description}>
-          With a passion for Software Development and creating modern React applications.</p>
+          With a passion for Software Development, Web Development, and Artificial Intelligence</p>
         <a href={CV} download>
           <button className="hover">
              Resume 

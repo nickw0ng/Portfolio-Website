@@ -52,6 +52,44 @@
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
   }
 }
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.arrow {
+  animation: bounce 2s infinite;
+}
+
+.arrowContainer {
+  position: absolute;
+  right: 30px; /* Adjust to position the arrow and text next to the moon icon */
+  top: 30px; /* Adjust to position the arrow and text below the moon icon */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px; 
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 15px solid var(--arrow-color, #000); 
+  transform: rotate(180deg);
+  animation: bounce 2s infinite;
+}
+
+.pressMeText {
+  font-size: 14px; /* Adjust font size */
+  color: var(--text-color, #000); /* Use a CSS variable for theme consistency */
+  font-weight: bold;
+}
 
 .colorModeContainer {
   position: relative;

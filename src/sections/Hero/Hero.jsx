@@ -44,7 +44,7 @@ function Hero() {
           onClick={toggleTheme}
         />
         <div className={styles.arrowContainer}>
-          <div className={styles.arrow}></div> 
+          
           <span className={styles.pressMeText}>Press me</span> 
       </div>
     </div>

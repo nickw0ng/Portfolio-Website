@@ -24,7 +24,7 @@ function Hero() {
   const [typeEffect] = useTypewriter({
     words: ['Software Engineer', 'Student', 'Web Developer']
     ,loop: true,
-    typeSpeed: 150,
+    typeSpeed: 149,
     deleteSpeed: 49
   })
 

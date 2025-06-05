@@ -1,9 +1,9 @@
 .container {
   position: relative;
-  padding: 4rem 2rem;
+  padding: 2rem 1rem;
   background: var(--background-color);
   border-radius: 2rem;
-  margin: 2rem 0;
+  margin: 1rem 0;
   transition: background-color 0.3s ease;
   box-shadow: var(--card-shadow);
   overflow: hidden;
@@ -13,6 +13,7 @@
   max-width: 1000px;
   margin: 0 auto;
   text-align: left;
+  padding: 0 1rem;
 }
 
 .content p {
@@ -22,6 +23,7 @@
   font-size: 1.1rem;
   opacity: 0.8;
   transition: opacity 0.3s ease;
+  text-align: left;
 }
 
 .content p:hover {
@@ -32,9 +34,25 @@
   margin-bottom: 0;
 }
 
+@media (width >= 600px) {
+  .container {
+    padding: 3rem 2rem;
+    margin: 1.5rem 0;
+  }
+  
+  .content {
+    padding: 0 1.5rem;
+  }
+}
+
 @media (width >= 800px) {
   .container {
     padding: 6rem 4rem;
+    margin: 2rem 0;
+  }
+  
+  .content {
+    padding: 0 2rem;
   }
   
   .content p {

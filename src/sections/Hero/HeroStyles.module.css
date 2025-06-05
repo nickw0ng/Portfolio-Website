@@ -25,11 +25,6 @@
   backdrop-filter: blur(10px);
 }
 
-.imageContainer {
-  position: relative;
-  display: inline-block;
-}
-
 .hero {
   max-width: 200px;
   width: 200px;
@@ -116,18 +111,16 @@ button:active {
 }
 
 .themeIconWrapper {
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  z-index: 2;
-  border-radius: 50%;
-  padding: 4px;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .colorModeInline {
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
   cursor: pointer;
+  margin-left: 0.5rem;
   transition: transform 0.3s ease;
   animation: themePulse 2.2s infinite cubic-bezier(.4,0,.2,1);
   box-shadow: 0 0 0 0 rgba(167,139,250,0.4);
@@ -205,16 +198,6 @@ button:active {
     width: 300px;
     height: 300px;
     margin-right: 2rem;
-  }
-
-  .themeIconWrapper {
-    top: -15px;
-    left: -15px;
-  }
-
-  .colorModeInline {
-    width: 32px;
-    height: 32px;
   }
 
   .info {

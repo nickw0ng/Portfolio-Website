@@ -109,6 +109,10 @@ h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
 }
 
 h2, h3 {

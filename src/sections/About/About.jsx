@@ -3,7 +3,9 @@ import styles from './AboutStyles.module.css';
 function About() {
   return (
     <section id="about" className={`${styles.container} no-particles`}>
-      <h1 className="sectionTitle">About Me</h1>
+      <div className={styles.titleContainer}>
+        <h1 className="sectionTitle">About Me</h1>
+      </div>
       <div className={styles.content}>
         <div className={styles.text}>
           <p>

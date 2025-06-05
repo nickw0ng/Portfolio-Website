@@ -22,59 +22,57 @@ function Hero() {
     Need to find a way to not shift the page when the Typewriting  effect is  empty
   */
   const [typeEffect] = useTypewriter({
-    words: ['Software Engineer', 'Student', 'Web Developer']
-    ,loop: true,
-    typeSpeed: 149,
-    deleteSpeed: 49
+    words: ['Software Engineer', 'Student', 'Web Developer'],
+    loop: true,
+    typeSpeed: 100,
+    deleteSpeed: 50,
   })
 
 
-  return <section if="hero" className={styles.container}>
-    <div className={styles.colorModeContainer}>
-        <img 
-          className={styles.hero}
-          src={heroImg} 
-          style={{ width: '373px', height: 'auto' }}
-          alt="Profile picture of Nicholas Wong"  
-        />
-        <img 
-          className={styles.colorMode}
-          src={themeIcon} 
-          alt="Color mode icon" 
-          onClick={toggleTheme}
-        />
-        <div className={styles.arrowContainer}>
-          
-          <span className={styles.pressMeText}>Press me</span> 
-      </div>
-    </div>
+  return <section className={styles.container}>
+    <img 
+      className={styles.hero}
+      src={heroImg} 
+      alt="Profile picture of Nicholas Wong"  
+    />
     <div className={styles.info}>
-        <h1>
-          Nicholas
-          <br />  
-          Wong
-        </h1>
-        <div className="App">
+        <div className={styles.nameRow}>
+          <h1>
+            Nicholas<br />Wong
+          </h1>
+          <div className={styles.themeIconWrapper}>
+            <img 
+              className={styles.colorModeInline}
+              src={themeIcon} 
+              alt="Color mode icon" 
+              onClick={toggleTheme}
+            />
+            <span className={styles.themeTooltip}>Switch theme</span>
+          </div>
+        </div>
         <h2> 
           <span> {typeEffect}</span>
+          <Cursor cursorStyle="|" />
         </h2>
-        </div>
-        <span>
-            <a href='https://www.linkedin.com/in/nicholas-wong18/' target="_blank">
-                <img src={linkedinIcon} alt="Linkedin icon" />
-            </a>
-            <a href='https://github.com/nickw0ng' target="_blank">
-                <img src={githubIcon} alt="Linkedin icon" />
-            </a>
-        </span>
         <p className={styles.description}>
           With a passion for Software Development, Web Development, and Artificial Intelligence</p>
-        <a href={CV} download>
-          <button className="hover">
+        <div className={styles.socialLinks}>
+          <a href='https://www.linkedin.com/in/nicholas-wong18/' target="_blank" rel="noopener noreferrer">
+            <img src={linkedinIcon} alt="Linkedin icon" />
+          </a>
+          <a href='https://github.com/nickw0ng' target="_blank" rel="noopener noreferrer">
+            <img src={githubIcon} alt="Linkedin icon" />
+          </a>
+        </div>
+        <a href={CV} download className="hover">
+          <button>
              Resume 
           </button>
         </a>
-        </div>
+    </div>
+    <div className={styles.scrollIndicator}>
+      <span className={styles.scrollArrow}>↓</span>
+    </div>
   </section>
   
 }

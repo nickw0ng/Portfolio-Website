@@ -30,25 +30,27 @@ function Hero() {
 
 
   return <section className={styles.container}>
-    <img 
-      className={styles.hero}
-      src={heroImg} 
-      alt="Profile picture of Nicholas Wong"  
-    />
+    <div className={styles.imageContainer}>
+      <img 
+        className={styles.hero}
+        src={heroImg} 
+        alt="Profile picture of Nicholas Wong"  
+      />
+      <div className={styles.themeIconWrapper}>
+        <img 
+          className={styles.colorModeInline}
+          src={themeIcon} 
+          alt="Color mode icon" 
+          onClick={toggleTheme}
+        />
+        <span className={styles.themeTooltip}>Switch theme</span>
+      </div>
+    </div>
     <div className={styles.info}>
         <div className={styles.nameRow}>
           <h1>
             Nicholas<br />Wong
           </h1>
-          <div className={styles.themeIconWrapper}>
-            <img 
-              className={styles.colorModeInline}
-              src={themeIcon} 
-              alt="Color mode icon" 
-              onClick={toggleTheme}
-            />
-            <span className={styles.themeTooltip}>Switch theme</span>
-          </div>
         </div>
         <h2> 
           <span> {typeEffect}</span>
